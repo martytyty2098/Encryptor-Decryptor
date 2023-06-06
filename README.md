@@ -6,14 +6,14 @@ Just run the executable and follow displayed instructions.
 User decides wether he wants to encrypt a file or decrypt his data that was already encrypted by **THIS** program.\
 Then he inserts a file path with its name and extension like `C:\users\username\desktop\some_file.dat` and a **key** that will be used to **encrypt** or **decrypt** data **(its important that when you decrypt a file you must insert the same key that you inserted while encrypting it)**
 ## Encryption
-#### **`Copying stage`**
+- #### **Copying stage**
 The program creates file named `original_filename.reserved_info` and copies the contents of your `original file` that you want to encrypt.
-#### **`Checking stage`**
+- #### **Checking stage**
 The program is checking if the the contents of `original file` were copied correctly into `reserved_info`
-#### **`Encrypting stage`**
+- #### **Encrypting stage**
 The program reads some bytes from `reserved_info` and adds the ASCII value of characters in the key to every byte read.\
 Then it writes these encrypted bytes into `original file` and does all that until it encrypts all bytes from `reserved_info` and writes them to `original file`
-#### **`Cleaning stage`**
+- #### **Cleaning stage**
 When the `original file` was successfully encrypted, the program deletes the `reserved_info` because it contains unencrypted information from `original file`
 ## Decryption
 The program creates a file named `original_filename.decrypted` then it reads bytes from `original file` that user wants to decrypt and subtracts the ASCII value of characters in the key to every byte read.\
