@@ -3,7 +3,7 @@ C++ program that can encrypt a file and then decrypt it back
 # Usage
 Just run the executable and follow displayed instructions.
 # How does it work
-User decides wether he wants to encrypt a file or decrypt his data that was already encrypted by **THIS** program.\
+User decides whether he wants to encrypt a file or decrypt his data that was already encrypted by **THIS** program.\
 Then he inserts a file path with its name and extension like `C:\users\username\desktop\some_file.dat` and a **key** that will be used to **encrypt** or **decrypt** data **(its important that when you decrypt a file you must insert the same key that you inserted while encrypting it)**
 ## Encryption
 - #### **Copying stage**
