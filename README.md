@@ -24,7 +24,7 @@ You will later need to add the needed extension to it (like `.exe` or `.mp4`)
 - If you were **encrypting** a file and your program for some reason was closed during **`Encryption stage`**, then the original file _may_ be rendered **useless** and you will not be able to restore it, in that case you must find the file named `(original_filename).reserved_info` **(the program should create it somewhere in the same directory as your original file)** and add the needed extension to it (like `.exe` or `.mp4`)
 # Cool things
 - This program can encrypt any type of file (text, photo, video, executables and so on) and then decrypt it back to the original state.
-- This program should work on every OS since it only uses standard features, but I only tested it on Windows 10 so I don't know about Linux or macOS.
+- This program should work on any OS since it only uses standard C++ features, but I only tested it on **Windows 10** so I don't know about **Linux** or **macOS**.
 # Known issues
 - The file path passed to the program must be in english characters.
 - This program has a hard time dealing with large files (5 GB and more) and i dont know how to fix it.
