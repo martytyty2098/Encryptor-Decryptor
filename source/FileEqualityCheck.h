@@ -31,7 +31,7 @@ static bool CheckFilesEqualityBin(std::fstream& left, std::fstream& right, bool 
 
 	ProgressBar bar(left_size - 1, bar_length);
 	size_t bytes_read = 0;
-	while ((!left.fail()) && (!right.fail()))
+	while (left.good() && right.good())
 	{
 		right.read(right_buff, buffer_size);
 		left.read(left_buff, buffer_size);
